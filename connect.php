@@ -1,4 +1,6 @@
 <?php
+session_start();
+
     // connect to database
 
     $server = '127.0.0.1';
@@ -6,9 +8,10 @@
     $password = 'root';
     $database = 'forum';
 
-    mysqli_connect($server,$username,$password,$database);
-    if(mysqli_connect_error())
-        echo "Connection Error";
+    $conn = mysqli_connect($server,$username,$password,$database);
+    if(mysqli_connect_errno()) {
+        echo "Failed to connect to MySQL: " . mysqli_connect_error();
+    }
     else
-        echo "Database Connection Sucess";
+        // echo "Database Connection Sucess";
 ?>
