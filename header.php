@@ -40,7 +40,7 @@
         
         <?php
             echo'<div id="userbar">';
-            if($_SESSION['signed_in'])
+            if(isset($_SESSION['signed_in']))
             {
                 echo 'Hello ' . $_SESSION['user_name'] . '. Not you? <a href="signout.php">Sign out</a>';
             }

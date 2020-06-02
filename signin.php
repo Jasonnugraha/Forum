@@ -81,7 +81,13 @@ else
                 //2. the query returned an empty result set, the credentials were wrong
                 if(mysqli_num_rows($result) == 0)
                 {
+                    echo '<form method="post" action="">
+                        Username: <input type="text" name="user_name" />
+                        Password: <input type="password" name="user_pass">
+                        <input type="submit" value="Sign in" />
+                        </form>';
                     echo 'You have supplied a wrong user/password combination. Please try again.';
+                    
                 }
                 else
                 {
