@@ -2,7 +2,6 @@
 //create_cat.php
 include 'connect.php';
 include 'header.php';
-
  
 if($_SERVER['REQUEST_METHOD'] != 'POST')
 {
@@ -32,12 +31,7 @@ else
     VALUES('" . mysqli_real_escape_string($conn,$_POST['cat_name']) . "',
           '" . mysqli_real_escape_string($conn,$_POST['cat_description']) . "')";
 
-
-
-
     $result = mysqli_query($conn,$sql);
-
-
 
     if(!$result)
     {
