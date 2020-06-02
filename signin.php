@@ -21,7 +21,7 @@ else
           note that the action="" will cause the form to post to the same page it is on */
         echo 
         '<form method="post" action=""> 
-            <div class= "SignInHeader">
+            <div class= "SignHeader">
                 <h2>SIGN IN</h2>
             </div>
             <div class="input-group">

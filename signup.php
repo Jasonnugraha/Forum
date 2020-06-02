@@ -29,7 +29,7 @@ if($_SERVER['REQUEST_METHOD'] != 'POST')
     //  </form>';
 
     '<form method="post" action=""> 
-            <div class= "SignInHeader">
+            <div class= "SignHeader">
                 <h2>SIGN UP</h2>
             </div>
             <div class="input-group">
