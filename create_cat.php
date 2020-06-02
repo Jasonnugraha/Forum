@@ -11,17 +11,19 @@ if($_SERVER['REQUEST_METHOD'] != 'POST')
             <div class= "SignHeader">
                 <h2>CATEGORY <hr></h2>
             </div>
-
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-tags"></i></span>
                 <input id="email" type="text" class="form-control" name="cat_name" placeholder="Category Name">
             </div>
-            <div class="input-group">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-plus-sign"></i></span>
-                <input id="email" type="text" class="form-control" name="cat_description" placeholder="Enter description...">
+            <div class="input-desc">
+                <label for="Description">Description:</label>    
+                <textarea class="form-control" rows="5" name="cat_description"></textarea>
             </div>
-            
-            <input type="submit" value="Add category" />
+        <p> <br> </p>
+            <a href="#" class="btn btn-success btn-xs">
+            <span class="glyphicon glyphicon-log-in"></span>
+            <input class="btn btn-success" type="submit" value="Add category" /> </a>
+        <p> <br> </p>
         </form>';
     
 }
@@ -49,5 +51,6 @@ else
         echo 'New category successfully added.';
     }
 }
+
 include 'footer.php';
 ?>
