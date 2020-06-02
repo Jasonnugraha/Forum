@@ -7,48 +7,57 @@
     <meta name="keywords" content="put, keywords, here" />
     <title>Game Forum</title>
     <script   src="https://code.jquery.com/jquery-3.5.1.js"   integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="   crossorigin="anonymous"></script>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
 <h1>Game Forum</h1>
     <div id="wrapper">
     <!-- <div id="menu"> -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-
-        <span class="navbar-toggler-icon"></span>
-
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg0">
-        <li class="nav-item active">
-            <a class="nav-link" href="index.php">Home</a> 
-        </li>
-        <li class="nav-item active">
-            <a class="nav-link" href="create_topic.php">Create a topic</a> 
-        </li>
-        <li class="nav-item active">
-            <a class="nav-link" href="create_cat.php">Create a category</a>
-        </li>
-        </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
         
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>  
+            </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg0">
+                        <!-- Navbar content -->
+                        <li class="navbar navbar-nav active">
+                            <a class="nav-link active" href="index.php">Home</a> 
+                        </li>
+                        <li class="navbar navbar-nav active">
+                            <a class="nav-link" href="create_topic.php">Create a topic</a> 
+                        </li>
+                        <li class="navbar navbar-nav active">
+                            <a class="nav-link" href="create_cat.php">Create a category</a>
+                        </li>
+                    </ul>
+
+                    <?php
+                    echo'<div id="userbar">';
+                    
+                    if(isset($_SESSION['signed_in']))
+                    {
+                        echo '<div class= "acc"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> Hello ' . $_SESSION['user_name'] . '. Not you? <a href="signout.php">Sign out</a></div>';
+                    }
+                    else
+                    {
+                        echo '<div class= "acc"> <a href="signin.php">Sign in</a> or <a href="signup.php">create an account</a>.</div>';
+                    }
+                    echo'</div>'; ?> 
+                </div>
+        </nav>
     </div>
-    </nav>
-        
-        <?php
-            echo'<div id="userbar">';
-            if(isset($_SESSION['signed_in']))
-            {
-                echo 'Hello ' . $_SESSION['user_name'] . '. Not you? <a href="signout.php">Sign out</a>';
-            }
-            else
-            {
-                echo '<a href="signin.php">Sign in</a> or <a href="signup.php">create an account</a>.';
-            }
-            echo'</div>'; ?>
-
-        </div>
-        <div id="content">
+<div id="content">

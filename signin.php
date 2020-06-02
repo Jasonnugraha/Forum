@@ -2,8 +2,11 @@
 //signin.php
 include 'connect.php';
 include 'header.php';
+
  
-echo '<h3>Sign in</h3>';
+// echo ' <div class="container">
+//         <h3>Sign in</h3>
+//         </div>';
  
 //first, check if the user is already signed in. If that is the case, there is no need to display this page
 if(isset($_SESSION['signed_in']) && $_SESSION['signed_in'] == true)
@@ -16,11 +19,30 @@ else
     {
         /*the form hasn't been posted yet, display it
           note that the action="" will cause the form to post to the same page it is on */
-        echo '<form method="post" action="">
-            Username: <input type="text" name="user_name" />
-            Password: <input type="password" name="user_pass">
-            <input type="submit" value="Sign in" />
-         </form>';
+        echo 
+        '<form method="post" action=""> 
+            <div class= "SignInHeader">
+                <h2>SIGN IN</h2>
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input id="email" type="text" class="form-control" name="user_name" placeholder="Username">
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                <input id="password" type="password" class="form-control" name="user_pass" placeholder="Password">
+            </div>
+        <p> <br> </p>
+            <a href="#" class="btn btn-primary btn-xs">
+            <span class="glyphicon glyphicon-log-in"></span>
+            <input class="btn btn-primary" type="submit" value="Sign in" /> </a>
+            <div>
+            <p>
+                Not yet a member? <a href="signup.php">Sign Up</a>
+            </p>
+        </div>
+        </form> ';
+
     }
     else
     {
@@ -99,7 +121,7 @@ else
                         $_SESSION['user_id'] = $row['user_id'];
                         $_SESSION['user_name'] = $row['user_name'];
                     } 
-                    echo 'Welcome, ' . $_SESSION['user_name'] . '. <a href="index.php">Proceed to the forum overview</a>.';
+                    echo '<div> Welcome, ' . $_SESSION['user_name'] . '. <a href="index.php">Proceed to the forum overview</a>.</div>';
                 }
             }
         }
