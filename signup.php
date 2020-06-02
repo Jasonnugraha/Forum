@@ -2,34 +2,58 @@
 include 'connect.php';
 include 'header.php';
 
-echo '<h3>Sign up</h3>';
-
-
 
 if($_SERVER['REQUEST_METHOD'] != 'POST')
 {
     /*the form hasn't been posted yet, display it
       note that the action="" will cause the form to post to the same page it is on */
-    echo '
-        <form method="post" action="">
-        <div class="form-group">
-        <label for="username">Username: </label>
-        <input type="text" name="user_name" placeholder="Enter Username"/>
-        </div>
-        <div class="form-group">
-        <label for="password">Password: </label>
-        <input type="password" name="user_pass" placeholder="Enter Password">
-        </div>
-        <div class="form-group">
-        <label for="password">Retype Password: </label>
-        <input type="password" name="user_pass_check" placeholder="Retype Password">
-        </div>
-        <div class="form-group">
-        <label for="email">E-mail: </label>
-        <input type="email" name="user_email" placeholder="Enter Email">
-        </div>
-        <input type="submit" class="btn btn-primary" value="Register" />
-     </form>';
+    echo 
+    //     '<form method="post" action="">
+    //     <div class="form-group">
+    //     <label for="username">Username: </label>
+    //     <input type="text" name="user_name" placeholder="Enter Username"/>
+    //     </div>
+    //     <div class="form-group">
+    //     <label for="password">Password: </label>
+    //     <input type="password" name="user_pass" placeholder="Enter Password">
+    //     </div>
+    //     <div class="form-group">
+    //     <label for="password">Retype Password: </label>
+    //     <input type="password" name="user_pass_check" placeholder="Retype Password">
+    //     </div>
+    //     <div class="form-group">
+    //     <label for="email">E-mail: </label>
+    //     <input type="email" name="user_email" placeholder="Enter Email">
+    //     </div>
+    //     <input type="submit" class="btn btn-primary" value="Register" />
+    //  </form>';
+
+    '<form method="post" action=""> 
+            <div class= "SignInHeader">
+                <h2>SIGN UP</h2>
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input id="email" type="text" class="form-control" name="user_name" placeholder="Enter Username">
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                <input id="password" type="password" class="form-control" name="user_pass" placeholder="Enter Password">
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                <input id="password" type="password" class="form-control" name="user_pass_check" placeholder="Retype Password">
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                <input id="password" type="password" class="form-control" name="user_email" placeholder="Enter Email">
+            </div>
+        <p> <br> </p>
+            <a href="#" class="btn btn-success btn-xs">
+            <span class="glyphicon glyphicon-log-in"></span>
+            <input class="btn btn-success" type="submit" value="Sign in" /> </a>
+        <p> <br> </p>
+        </form> ';
 }
 else
 {
