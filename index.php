@@ -44,7 +44,6 @@ else
             echo '</tr>';
         }
     }
-    
 }
 include 'footer.php';
 ?>

@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
+<h1>Game Forum</h1>
+    <div class="container">
     <div id="wrapper">
     <!-- <div id="menu"> -->
         <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-darkt bg-dark">
@@ -85,5 +87,5 @@
                 </ul>
 
         </nav>
-    </div>
+    <!-- </div> -->
 <div id="content">

@@ -39,7 +39,11 @@ body {
   }
  
 #userbar {
+<<<<<<< HEAD
     
+=======
+    /* background-color: #fff; */
+>>>>>>> design-jason
     float: right;
     width: 250px;
 
@@ -69,9 +73,9 @@ th {
     color: #F0F0F0;
 }
  
-td {
+/* td {
     padding: 5px;
-}
+} */
  
 /* Begin font styles */
 h1, #footer {
@@ -174,6 +178,7 @@ form {
   .acc {
     width: 75%;
     margin: 20px auto 0px;
+<<<<<<< HEAD
     color: white;
 
   }
@@ -190,3 +195,7 @@ form {
 #Title{
     color: white;
 }
+=======
+  }
+
+>>>>>>> design-jason
