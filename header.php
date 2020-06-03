@@ -19,6 +19,7 @@
 </head>
 <body>
 <h1>Game Forum</h1>
+    <div class="container">
     <div id="wrapper">
     <!-- <div id="menu"> -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -59,5 +60,5 @@
                     echo'</div>'; ?> 
                 </div>
         </nav>
-    </div>
+    <!-- </div> -->
 <div id="content">

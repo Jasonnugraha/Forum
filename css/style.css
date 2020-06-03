@@ -39,7 +39,7 @@ body {
   }
  
 #userbar {
-    background-color: #fff;
+    /* background-color: #fff; */
     float: right;
     width: 250px;
 }
@@ -68,9 +68,9 @@ th {
     color: #F0F0F0;
 }
  
-td {
+/* td {
     padding: 5px;
-}
+} */
  
 /* Begin font styles */
 h1, #footer {
@@ -174,3 +174,4 @@ form {
     width: 75%;
     margin: 20px auto 0px;
   }
+
