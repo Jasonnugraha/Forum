@@ -34,7 +34,7 @@ if($_SERVER['REQUEST_METHOD'] != 'POST')
             </div>
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                <input id="email" type="text" class="form-control" name="user_name" placeholder="Enter Username">
+                <input id="username" type="text" class="form-control" name="user_name" placeholder="Enter Username">
             </div>
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
@@ -46,7 +46,7 @@ if($_SERVER['REQUEST_METHOD'] != 'POST')
             </div>
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                <input id="password" type="password" class="form-control" name="user_email" placeholder="Enter Email">
+                <input id="email" type="text" class="form-control" name="user_email" placeholder="Enter Email">
             </div>
         <p> <br> </p>
             <a href="#" class="btn btn-success btn-xs">
