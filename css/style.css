@@ -39,8 +39,10 @@ body {
   }
  
 #userbar {
+    background-color: yellowgreen;
     float: right;
     width: 250px;
+
 }
  
 #footer {
@@ -172,5 +174,27 @@ form {
   .acc {
     width: 75%;
     margin: 20px auto 0px;
-    color: white;
+
   }
+
+.navbar.navbar-expand-lg { 
+    padding: 0;
+}
+
+
+.navbar-nav.mr-auto.mt-2.mt-lg0{
+    background-color: red;
+}
+
+.collapse.navbar-collapse{
+    background-color: green;
+    padding: 0;
+}
+
+.row{
+    background-color: yellow;
+}
+
+.col{
+    background-color: #009FC1;
+}
