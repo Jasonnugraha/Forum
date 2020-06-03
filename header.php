@@ -34,8 +34,7 @@
                     <ul class="navbar-nav mr-auto mt-2 mt-lg0">
                         <!-- Navbar content -->
                        <div class="container">
-                       <h4> Game Forum</h4>
-
+                       <h4 id="Title">Game Forum</h4>
                             <div class="row">
                                 <div class="col">
                                     <li class="navbar navbar-nav active">
