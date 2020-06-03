@@ -1,6 +1,8 @@
 <?php
 include 'connect.php';
 include 'header.php';
+
+
 $sql = "SELECT
             cat_id,
             cat_name,
@@ -10,6 +12,7 @@ $sql = "SELECT
  
 $result = mysqli_query($conn,$sql);
  
+
 if(!$result)
 {
     echo 'The categories could not be displayed, please try again later.';
@@ -41,6 +44,7 @@ else
             echo '</tr>';
         }
     }
+    
 }
 include 'footer.php';
 ?>

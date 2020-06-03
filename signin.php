@@ -121,7 +121,7 @@ else
                         $_SESSION['user_id'] = $row['user_id'];
                         $_SESSION['user_name'] = $row['user_name'];
                     } 
-                    echo '<div> Welcome, ' . $_SESSION['user_name'] . '. <a href="index.php">Proceed to the forum overview</a>.</div>';
+                    echo '<div> Welcome, ' . $_SESSION['user_name'] . '. <a href="index.php"><br>Proceed to the forum overview</a>.</div>';
                 }
             }
         }
