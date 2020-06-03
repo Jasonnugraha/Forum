@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
-<h1>Game Forum</h1>
     <div id="wrapper">
     <!-- <div id="menu"> -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -30,20 +29,38 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>  
             </button>
-
+                 
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg0">
                         <!-- Navbar content -->
-                        <li class="navbar navbar-nav active">
-                            <a class="nav-link active" href="index.php">Home</a> 
-                        </li>
-                        <li class="navbar navbar-nav active">
-                            <a class="nav-link" href="create_topic.php">Create a topic</a> 
-                        </li>
-                        <li class="navbar navbar-nav active">
-                            <a class="nav-link" href="create_cat.php">Create a category</a>
-                        </li>
-                    </ul>
+                       <div class="container">
+                       <h4> Game Forum</h4>
+
+                            <div class="row">
+                                <div class="col">
+                                    <li class="navbar navbar-nav active">
+                                        <a class="nav-link active" href="index.php">Home</a> 
+                                    </li>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <li class="navbar navbar-nav active">
+                                        <a class="nav-link" href="create_topic.php">Create a topic</a> 
+                                    </li>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <li class="navbar navbar-nav active">
+                                    <a class="nav-link" href="create_cat.php">Create a category</a>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+
 
                     <?php
                     echo'<div id="userbar">';
@@ -58,6 +75,8 @@
                     }
                     echo'</div>'; ?> 
                 </div>
+                </ul>
+
         </nav>
     </div>
 <div id="content">
