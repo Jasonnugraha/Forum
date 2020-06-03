@@ -21,7 +21,7 @@
 <h1>Game Forum</h1>
     <div id="wrapper">
     <!-- <div id="menu"> -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-darkt bg-dark">
         
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -35,13 +35,13 @@
                     <ul class="navbar-nav mr-auto mt-2 mt-lg0">
                         <!-- Navbar content -->
                         <li class="navbar navbar-nav active">
-                            <a class="nav-link active" href="index.php">Home</a> 
+                            <a class="nav-link active" href="index.php">HOME</a> 
                         </li>
                         <li class="navbar navbar-nav active">
-                            <a class="nav-link" href="create_topic.php">Create a topic</a> 
+                            <a class="nav-link" href="create_topic.php">TOPIC</a> 
                         </li>
                         <li class="navbar navbar-nav active">
-                            <a class="nav-link" href="create_cat.php">Create a category</a>
+                            <a class="nav-link" href="create_cat.php">CATEGORY</a>
                         </li>
                     </ul>
 
@@ -50,11 +50,19 @@
                     
                     if(isset($_SESSION['signed_in']))
                     {
-                        echo '<div class= "acc"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> Hello ' . $_SESSION['user_name'] . '. Not you? <a href="signout.php">Sign out</a></div>';
+                        echo '<div class= "acc"> Hello ' . $_SESSION['user_name'] . '. Not you? <a href="signout.php">Sign out</a></div>';
                     }
                     else
                     {
-                        echo '<div class= "acc"> <a href="signin.php">Sign in</a> or <a href="signup.php">create an account</a>.</div>';
+                        echo ' <div class= "nav-link">
+                        <a href="signin.php" class="btn btn-primary btn-xs">
+                            <span class="glyphicon glyphicon-user"></span>
+                            <input class="btn btn-primary" type="submit" value="Sign In" /> 
+                        </a>
+                        <a href="signup.php" class="btn btn-success btn-xs">
+                            <input class="btn btn-success" type="submit" value="Sign Up" /> 
+                        </a>
+                        </div>';
                     }
                     echo'</div>'; ?> 
                 </div>

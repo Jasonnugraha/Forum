@@ -9,11 +9,11 @@ if($_SERVER['REQUEST_METHOD'] != 'POST')
     //the form hasn't been posted yet, display it
     echo '<form method="post" action="">
             <div class= "SignHeader">
-                <h2>CATEGORY <hr></h2>
+                <h2>CATEGORY</h2>
             </div>
             <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-tags"></i></span>
-                <input id="email" type="text" class="form-control" name="cat_name" placeholder="Category Name">
+                <input id="CatName" type="text" class="form-control" name="cat_name" placeholder="Category Name">
             </div>
             <div class="input-desc">
                 <label for="Description">Description:</label>    

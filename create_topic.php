@@ -3,7 +3,6 @@
 include 'connect.php';
 include 'header.php';
  
-echo '<h2>Create a topic</h2>';
 if($_SESSION['signed_in'] == false)
 {
     //the user is not signed in
@@ -48,18 +47,34 @@ else
             {
          
                 echo '<form method="post" action="">
-                    Subject: <input type="text" name="topic_subject" />
-                    Category:'; 
+                    <div class= "SignHeader">
+                        <h2>TOPIC</h2>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-tags"></i></span>
+                        <input id="TopicSubject" type="text" class="form-control" name="topic_subject" placeholder="Subject">
+                    </div>'; 
                  
-                echo '<select name="topic_cat">';
+                echo '
+                <div class="input-desc">
+                <label for="Category">Category</label> 
+                <select name="topic_cat">';
                     while($row = mysqli_fetch_assoc($result))
                     {
                         echo '<option value="' . $row['cat_id'] . '">' . $row['cat_name'] . '</option>';
                     }
-                echo '</select>'; 
+                echo '</select> </div>'; 
                      
-                echo 'Message: <textarea name="post_content" /></textarea>
-                    <input type="submit" value="Create topic" />
+                echo '
+                <div class="input-desc">
+                    <label for="Message">Message</label>    
+                    <textarea class="form-control" rows="5" name="post_content"></textarea>
+                </div>
+                <p> <br> </p>
+                    <a href="#" class="btn btn-success btn-xs">
+                    <span class="glyphicon glyphicon-log-in"></span>
+                    <input class="btn btn-success" type="submit" value="Create topic" /> </a>
+                <p> <br> </p>
                  </form>';
             }
         }

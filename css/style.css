@@ -1,5 +1,5 @@
 body {
-    background-color: #8fadce;
+    background-color: #2e856e;
     text-align: center;         /* make sure IE centers the page too */
 }
  
@@ -39,7 +39,6 @@ body {
   }
  
 #userbar {
-    background-color: #fff;
     float: right;
     width: 250px;
 }
@@ -130,7 +129,7 @@ textarea {
     width: 100%;
     margin: 0px;
     color: white;
-    background: #6983aa;
+    background: #2e856e;
     text-align: center;
     border-bottom: none;
     border-radius: 10px 10px 0px 0px;
@@ -173,4 +172,5 @@ form {
   .acc {
     width: 75%;
     margin: 20px auto 0px;
+    color: white;
   }

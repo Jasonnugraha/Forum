@@ -51,7 +51,7 @@ if($_SERVER['REQUEST_METHOD'] != 'POST')
         <p> <br> </p>
             <a href="#" class="btn btn-success btn-xs">
             <span class="glyphicon glyphicon-log-in"></span>
-            <input class="btn btn-success" type="submit" value="Sign in" /> </a>
+            <input class="btn btn-success" type="submit" value="Sign Up" /> </a>
         <p> <br> </p>
         </form> ';
 }
