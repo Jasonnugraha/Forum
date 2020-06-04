@@ -59,7 +59,7 @@ else
             else
             {
                 //prepare the table
-                echo '<table border="1">
+                echo '<table class="table table-striped table-bordered">
                       <tr>
                         <th>Topic</th>
                         <th>Created at</th>
