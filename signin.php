@@ -126,11 +126,8 @@ else
                         <div class= "SignHeader">
                             <h2>WELCOME</h2>'
                             . $_SESSION['user_name'] .
-                        '</div>
-                        <div> 
-                            . <a href="index.php"><br>PROCEED TO THE FORUM OVERVIEW<br><br></a>.
-                        </div>
-                    ';
+                            '. <a href="index.php"><br>PROCEED TO THE FORUM OVERVIEW<br><br></a>.
+                            </div>';
                 }
             }
         }
