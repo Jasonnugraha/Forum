@@ -39,14 +39,8 @@ body {
   }
  
 #userbar {
-<<<<<<< HEAD
-    
-=======
-    /* background-color: #fff; */
->>>>>>> design-jason
     float: right;
     width: 250px;
-
 }
  
 #footer {
@@ -142,6 +136,17 @@ textarea {
     padding: 20px;
   }
 
+.SignHeaderAlert {
+    width: 100%;
+    margin: 0px;
+    color: white;
+    background: #BA262B;
+    text-align: center;
+    border-bottom: none;
+    border-radius: 10px 10px 0px 0px;
+    padding: 20px;
+}
+
 form {
     width: 50%;
     margin: 50px auto 0px;
@@ -178,9 +183,7 @@ form {
   .acc {
     width: 75%;
     margin: 20px auto 0px;
-<<<<<<< HEAD
     color: white;
-
   }
 
 .navbar.navbar-expand-lg { 
@@ -195,7 +198,3 @@ form {
 #Title{
     color: white;
 }
-=======
-  }
-
->>>>>>> design-jason
