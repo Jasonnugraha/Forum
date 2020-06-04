@@ -39,18 +39,13 @@ body {
   }
  
 #userbar {
-<<<<<<< HEAD
-    
-=======
-    /* background-color: #fff; */
->>>>>>> design-jason
     float: right;
     width: 250px;
-
 }
  
 #footer {
     clear: both;
+    background-color: #373737;
 }
  
 /* begin table styles */
@@ -194,6 +189,8 @@ form {
 
 #Title{
     color: white;
+    font-size: 1.5em;
+    text-decoration: none;
 }
 =======
   }
