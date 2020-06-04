@@ -41,14 +41,13 @@ body {
 #userbar {
     float: right;
     width: 250px;
-    background-color: #00728B   ;
 }
  
 #footer {
     clear: both;
+    background-color: #373737;
     font-size: 15px;
     padding: 25px;
-    background-color: red;
     bottom: 0;
     left: 0;
     position: fixed;
@@ -186,7 +185,6 @@ form {
 
 .collapse.navbar-collapse{
     padding: 0;
-    background-color: #032472;
 }
 
 #Title{
