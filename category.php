@@ -12,12 +12,6 @@ $sql = "SELECT
             categories
         WHERE
             cat_id = " . mysqli_real_escape_string($conn,$_GET['id']);
-
-echo '<br>';
-
-echo $sql;
-
-echo '<br>';
  
 $result = mysqli_query($conn,$sql);
  
@@ -82,6 +76,7 @@ else
                         echo '</td>';
                     echo '</tr>';
                 }
+                echo '</table>';
             }
         }
     }

@@ -84,13 +84,20 @@ else
                         echo '</td>';
                     echo '</tr>';
                 }
+                echo '</table>';
             }
         }
     }
-    echo '<form method="post" action="reply.php?id=' . $_GET['id'] . '">
+    echo '
+    <div class="container">
+    <div class="form-group>
+    <form method="post" action="reply.php?id=' . $_GET['id'] . '">
     <textarea name="reply-content"></textarea>
-    <input type="submit" value="Submit reply" />
-    </form>';
+    </form>
+    <input class="btn btn-primary" type="submit" value="Submit reply"/>
+
+    </div>
+    </div>';
 }
 ?>
 <!-- <form method="post" action="reply.php?id=' . $_GET['id'] . '">
