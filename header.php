@@ -20,23 +20,23 @@
 <body>
 <h1>Game Forum</h1>
     <div class="container">
-    <div id="wrapper">
-    <!-- <div id="menu"> -->
-        <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-darkt bg-dark">
+        <div id="wrapper">
+          <!-- <div id="menu"> -->
+            <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-darkt bg-dark">
         
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
 
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>  
-            </button>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>  
+                </button>
                  
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg0">
                         <!-- Navbar content -->
                        <div class="container">
-                       <a href="index.php" id="Title">Game Forum</a>
+                        <a href="index.php" id="Title">Game Forum</a>
 
                             <div class="row">
                                 <div class="col">
@@ -75,10 +75,13 @@
                         </a>
                         </div>';
                     }
-                    echo'</div>'; ?> 
+                    echo'</div>'; 
+                    ?>
+                     
+                    </ul>
                 </div>
-                </ul>
+                    
 
-        </nav>
+            </nav>
     <!-- </div> -->
 <div id="content">
