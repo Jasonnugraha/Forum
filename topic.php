@@ -87,12 +87,16 @@ else
             }
         }
     }
+    echo '<form method="post" action="reply.php?id=' . $_GET['id'] . '">
+    <textarea name="reply-content"></textarea>
+    <input type="submit" value="Submit reply" />
+    </form>';
 }
 ?>
-<form method="post" action="reply.php?id=' . $_GET['id'] . '">
+<!-- <form method="post" action="reply.php?id=' . $_GET['id'] . '">
 <textarea name="reply-content"></textarea>
 <input type="submit" value="Submit reply" />
-</form>
+</form> -->
 <?php
 include 'footer.php';
 ?>
