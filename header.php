@@ -36,7 +36,7 @@
                     <ul class="navbar-nav mr-auto mt-2 mt-lg0">
                         <!-- Navbar content -->
                        <div class="container">
-                        <a href="index.php" id="Title">Game </a>
+                        <a href="index.php" id="Title">Game Forum</a>
 
                             <div class="row">
                                 <div class="col">
