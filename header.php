@@ -49,7 +49,7 @@
                             <div class="row">
                                 <div class="col">
                                     <li class="navbar navbar-nav active">
-                                    <a class="nav-link" href="create_cat.php">Create a category</a>
+                                        <a class="nav-link" href="create_cat.php">Create a category</a>
                                     </li>
                                 </div>
                             </div>

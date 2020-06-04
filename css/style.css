@@ -137,6 +137,17 @@ textarea {
     padding: 20px;
   }
 
+.SignHeaderAlert {
+    width: 100%;
+    margin: 0px;
+    color: white;
+    background: #BA262B;
+    text-align: center;
+    border-bottom: none;
+    border-radius: 10px 10px 0px 0px;
+    padding: 20px;
+}
+
 form {
     width: 50%;
     margin: 50px auto 0px;
@@ -174,7 +185,6 @@ form {
     width: 75%;
     margin: 20px auto 0px;
     color: white;
-
   }
 
 .navbar.navbar-expand-lg { 
