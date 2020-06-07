@@ -38,7 +38,8 @@ else
         }
         else
         {
-            echo 'Your reply has been saved, check out <a href="topic.php?id=' . htmlentities($_GET['id']) . '">the topic</a>.';
+            echo '
+            Your reply has been saved, check out <a href="topic.php?id=' . htmlentities($_GET['id']) . '">the topic</a>.';
         }
     }
 }

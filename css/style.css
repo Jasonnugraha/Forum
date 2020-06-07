@@ -77,6 +77,10 @@ h1, #footer {
     font-family: Arial;
     color: #F1F3F1;
 }
+
+h2 {
+    color: white;
+}
  
 h3 {margin: 0; padding: 0;}
  

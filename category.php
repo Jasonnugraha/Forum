@@ -30,7 +30,7 @@ else
         //display category data
         while($row = mysqli_fetch_assoc($result))
         {
-            echo '<h2>Topics in ′' . $row['cat_name'] . '′ category</h2>';
+            echo '<h3>Topics in ′' . $row['cat_name'] . '′ category</h3>';
         }
      
         //do a query for the topics

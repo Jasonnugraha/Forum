@@ -2,6 +2,7 @@
 //create_topic.php
 include 'connect.php';
 include 'header.php';
+
  
 if(isset($_SESSION['signed_in']) == false)
 {

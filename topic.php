@@ -28,7 +28,7 @@ else
         //display category data
         while($row = mysqli_fetch_assoc($result))
         {
-            echo '<h2>Reply in ′' . $row['topic_subject'] . '′ topics</h2>';
+            echo '<h3>Reply in ′' . $row['topic_subject'] . '′ topics</h3>';
         }
     
         $sql =  "SELECT p.post_topic,
