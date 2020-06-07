@@ -103,7 +103,7 @@ else
                 //2. the query returned an empty result set, the credentials were wrong
                 if(mysqli_num_rows($result) == 0)
                 {
-                    echo '<h3>You have supplied a wrong user/password combination. <br> Please try again.</h3>';
+                    echo '<h1>You have supplied a wrong user/password combination. <br> Please try again.</h1>';
 
                     echo  '<form method="post" action=""> 
                     <div class= "SignHeader">

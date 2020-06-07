@@ -75,7 +75,8 @@ th {
 /* Begin font styles */
 h1, #footer {
     font-family: Arial;
-    color: #F1F3F1;
+    color: black;
+    text-align: center;
 }
 
 h2 {
@@ -84,7 +85,6 @@ h2 {
  
 h3 {
     margin: 0; padding: 0;
-    text-align: center;
 }
  
 /* Menu styles */

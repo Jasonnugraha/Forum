@@ -9,7 +9,7 @@ if(isset($_SESSION['signed_in']) == false)
     //the user is not signed in
     echo ' <form>
                 <div class= "SignHeaderAlert">
-                    <h2>Sorry, you have to be <a href="/signin.php">signed in</a> to create a topic.</h2>
+                    <h2>Sorry, you have to be <a href="signin.php">signed in</a> to create a topic.</h2>
                 </div>
             </form>';
 }
