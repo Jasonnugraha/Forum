@@ -103,12 +103,30 @@ else
                 //2. the query returned an empty result set, the credentials were wrong
                 if(mysqli_num_rows($result) == 0)
                 {
-                    echo '<form method="post" action="">
-                        Username: <input type="text" name="user_name" />
-                        Password: <input type="password" name="user_pass">
-                        <input type="submit" value="Sign in" />
-                        </form>';
-                    echo 'You have supplied a wrong user/password combination. Please try again.';
+                    echo '<h3>You have supplied a wrong user/password combination. <br> Please try again.</h3>';
+
+                    echo  '<form method="post" action=""> 
+                    <div class= "SignHeader">
+                        <h2>SIGN IN</h2>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input id="email" type="text" class="form-control" name="user_name" placeholder="Username">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input id="password" type="password" class="form-control" name="user_pass" placeholder="Password">
+                    </div>
+                <p> <br> </p>
+                    <a href="#" class="btn btn-primary btn-xs">
+                    <span class="glyphicon glyphicon-log-in"></span>
+                    <input class="btn btn-primary" type="submit" value="Sign in" /> </a>
+                    <div>
+                    <p>
+                        Not yet a member? <a href="signup.php">Sign Up</a>
+                    </p>
+                </div>
+                </form> ';
                     
                 }
                 else
