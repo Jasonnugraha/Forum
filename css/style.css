@@ -31,7 +31,7 @@ body {
 }
  
 #menu a:hover {
-    background-color: #009FC1;
+    background-color: red;
 }
 
 .navbar-nav  li a:hover {
@@ -149,6 +149,17 @@ textarea {
     padding: 20px;
 }
 
+.SignHeaderMessage {
+    width: 100%;
+    margin: 0px;
+    color: #a9a9a9;
+    background: #a9a9a9;
+    text-align: center;
+    border-bottom: none;
+    border-radius: 10px 10px 0px 0px;
+    padding: 20px;
+}
+
 form {
     width: 50%;
     margin: 50px auto 0px;
@@ -196,6 +207,21 @@ form {
 .collapse.navbar-collapse{
     padding: 0;
 }
+
+.SignHeader.a:link {
+    background-color: #f44336;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
 
 #Title{
     color: white;

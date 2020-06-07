@@ -122,12 +122,13 @@ else
                         $_SESSION['user_name'] = $row['user_name'];
                     } 
                     echo ' 
-                    <form method="post" action="">
-                        <div class= "SignHeader">
+                    <form>
+                        <div class= "SignHeaderMessage">
                             <h2>WELCOME</h2>'
                             . $_SESSION['user_name'] .
                             '. <a href="index.php"><br>PROCEED TO THE FORUM OVERVIEW<br><br></a>.
-                            </div>';
+                        </div>
+                    </form>';
                 }
             }
         }
