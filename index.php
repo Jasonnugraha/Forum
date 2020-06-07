@@ -12,6 +12,8 @@ $sql = "SELECT
  
 $result = mysqli_query($conn,$sql);
  
+// echo $sql;
+// var_dump($result);
 
 if(!$result)
 {
@@ -26,10 +28,9 @@ else
     else
     {
         //prepare the table
-        echo '<table border="1">
+        echo '<table class="table table-striped table-bordered">
               <tr>
                 <th>Category</th>
-                <th>Last topic</th>
               </tr>'; 
              
         while($row = mysqli_fetch_assoc($result))
@@ -38,9 +39,9 @@ else
                 echo '<td class="leftpart">';
                     echo '<h3><a href="category.php?id=' . $row['cat_id'] . '">' . $row['cat_name'] . '</a></h3>' . $row['cat_description'];
                 echo '</td>';
-                echo '<td class="rightpart">';
-                            echo '<a href="topic.php?id=">Topic subject</a> at 10-10';
-                echo '</td>';
+                // echo '<td class="rightpart">';
+                //             echo '<a href="topic.php?id=">Topic subject</a> at 10-10';
+                // echo '</td>';
             echo '</tr>';
         }
         echo '</table>';

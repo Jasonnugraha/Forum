@@ -42,7 +42,8 @@ else
                 FROM posts p
                 JOIN users u ON (p.post_by = u.user_id)
                 JOIN topics t ON (p.post_topic = t.topic_id)
-                WHERE p.post_topic = " . mysqli_real_escape_string($conn,$_GET['id']);
+                WHERE p.post_topic = " . mysqli_real_escape_string($conn,$_GET['id'])."
+                ORDER BY p.post_date";
 
         // echo $sql;
          
@@ -88,22 +89,28 @@ else
             }
         }
     }
-    echo '
-    <div class="container">
-    <div class="form-group>
-    <form method="post" action="reply.php?id=' . $_GET['id'] . '">
-    <textarea name="reply-content"></textarea>
-    </form>
-    <input class="btn btn-primary" type="submit" value="Submit reply"/>
+    // echo '
+    // <div class="container">
+    // <div class="form-group>
+    // <form method="post" action="reply.php?id=' . $_GET['id'] . '">
+    // <textarea name="reply-content"></textarea>
+    // </form>
+    // <input type="submit" value="Submit reply"/>
 
+    // </div>
+    // </div>';
+    echo '
+    <div class="container" >
+        <form method="post" action="reply.php?id=' . $_GET['id'] . '">
+            <div>
+                <textarea name="reply-content"></textarea>
+            </div>
+            <div>
+            <input class="btn btn-primary" type="submit" value="Submit reply" />
     </div>
+    </form>
     </div>';
+
 }
-?>
-<!-- <form method="post" action="reply.php?id=' . $_GET['id'] . '">
-<textarea name="reply-content"></textarea>
-<input type="submit" value="Submit reply" />
-</form> -->
-<?php
 include 'footer.php';
 ?>

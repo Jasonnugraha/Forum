@@ -28,7 +28,7 @@ else
                         " . mysqli_real_escape_string($conn,$_GET['id']) . ",
                         " . $_SESSION['user_id'] . ")";
 
-        echo $sql;
+        // echo $sql;
                          
         $result = mysqli_query($conn,$sql);
                          
