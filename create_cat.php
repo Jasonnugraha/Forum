@@ -3,7 +3,7 @@
 include 'connect.php';
 include 'header.php';
 
-if($_SESSION['signed_in'] == false)
+if(isset($_SESSION['signed_in']) == false)
 {
     //the user is not signed in
     echo ' <form>
