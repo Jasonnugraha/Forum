@@ -11,9 +11,12 @@ if($_SERVER['REQUEST_METHOD'] != 'POST')
 else
 {
     //check for sign in status
-    if(!$_SESSION['signed_in'])
+    if(!isset($_SESSION['signed_in']))
     {
-        echo 'You must be signed in to post a reply.';
+        echo 
+            '<div class="SignHeaderAlert">
+                You must be signed in to post a reply.
+            </div>';
     }
     else
     {

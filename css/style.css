@@ -75,14 +75,17 @@ th {
 /* Begin font styles */
 h1, #footer {
     font-family: Arial;
-    color: #F1F3F1;
+    color: black;
+    text-align: center;
 }
 
 h2 {
     color: white;
 }
  
-h3 {margin: 0; padding: 0;}
+h3 {
+    margin: 0; padding: 0;
+}
  
 /* Menu styles */
 .item {
@@ -213,7 +216,7 @@ form {
 }
 
 .SignHeader.a:link {
-    background-color: #f44336;
+    background-color: green;
     color: white;
     padding: 15px 25px;
     text-align: center;
