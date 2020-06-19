@@ -10,7 +10,7 @@ class serverTest extends TestCase
   {
     // test to ensure that the object from an fsockopen is valid
     $connObj = new server();
-    $serverName = 'localhost:8080';
+    $serverName = 'localhost:8888';
     $this->assertTrue($connObj->connectToServer($serverName) !== false);
   }
 }
